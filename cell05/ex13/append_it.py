@@ -4,8 +4,10 @@ import sys
 import re
 
 if len(sys.argv) > 1:
-    for i in sys.argv:
-        if re.findall(r'ism', sys.argv[i]) & sys.argv[0]:
+    for i in range(len(sys.argv)):
+        if sys.argv[i] == sys.argv[0]:
+            continue
+        if re.findall(r'ism', sys.argv[i]):
             continue
         else:
             print(sys.argv[i] + "ism")
