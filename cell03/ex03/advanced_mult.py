@@ -8,7 +8,7 @@ else:
     i = 0
     while i <= 10:
         num = 0
-        print(f"Table de {i}: ", end="")
+        print(f"Table de {i}: ", end=" ")
         while num <= 10:
             print(f"{i*num}", end = " ")
             if num == 10:
